@@ -1,6 +1,6 @@
 # Use an official Python runtime as the base image
 FROM python:3.13-slim
-LABEL org.opencontainers.image.source https://github.com/replydev/GameJam2025
+LABEL org.opencontainers.image.source https://github.com/TakFog/manolonga-server
 
 # Set the working directory
 WORKDIR /app
