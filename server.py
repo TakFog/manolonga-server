@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify
+from flask_cors import CORS, cross_origin
 from collections import defaultdict
 import threading
 import json
@@ -7,6 +8,8 @@ import random
 import os
 
 app = Flask(__name__)
+cors = CORS(app)
+
 states = defaultdict(lambda: defaultdict(dict))
 layouts = {}  # Store generated layouts
 lock = threading.Lock()
